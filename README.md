@@ -28,3 +28,18 @@ Implement your own version of reduce. You're not allowed to mutate any variables
 
 #### Clues:
 
+Test data suggestion:
+reducePayne([1, 2, 3, 4, 5], function(a, b) { return a + b; })
+Your job is to implement reducePayne. You should get a result of 15 for the above call.
+
+Hint 1:
+You'll need to use recursion. The reducePayne function will have to call itself until the list is empty. Primitive recursion like this is bad idea in most languages btw. You'll create very deep call stacks and use way too much memory. This whole thing is only a conceptual exercise.
+
+Hint 2:
+Remember that this is a higher-order function so you're going to need to think about two functions that fit together. reducePayne will accept another function and apply that in its body somehow.
+
+Hint 3:
+Recursive functions must have a terminating condition. Be explicit about what happens when you run out of items in the list.
+
+Hint 4:
+Try to think of the first param to your inner (passed-in) function as the accumulating result. This would be param a in the test data suggestion.
