@@ -24,22 +24,10 @@ Implement your own version of reduce. You're not allowed to mutate any variables
 - Clue status - looked at all of them and didn't feel very illuminated as I think they were things I was already kind of aware of but getting bogged down in how it iterate and how to not mutate a variable.  
 - Thought process - worried about changing the original API of the reduce function (although that's thinking very javascript about it too, perhaps it has a slightly different API in other languages). But I've added another parameter with a default value and it makes things easier. Similarly give the initialValue (optional param) a default value, this is necessary as not using named params so need to maintain order and number of params in the function signature. 
 - Issues - I don't think this counts as mutating values as each time myReduce() gets called will have a new execution context and the const values are scoped within that? 
-- Ideas - Feel like this successfully generalises the first value and second value passed to the callback, as well as the return value. I think the terminating condition works well. But I've not added an additional function to the function signature so not confident that I'm meeting requirement in the hint that said that the function "will accept another function and apply that in its body somehow."
+- Ideas - Feel like this successfully generalises the first value and second value passed to the callback, as well as the return value. I think the terminating condition works well. But I've not added an additional function to the function signature so not confident that I'm meeting requirement in the hint that said that the function "will accept another function and apply that in its body somehow." Also, have I done it wrong if my function accomodates the optional initial value param.
 
 #### Clues:
 
 Test data suggestion:
 reducePayne([1, 2, 3, 4, 5], function(a, b) { return a + b; })
 Your job is to implement reducePayne. You should get a result of 15 for the above call.
-
-Hint 1:
-You'll need to use recursion. The reducePayne function will have to call itself until the list is empty. Primitive recursion like this is bad idea in most languages btw. You'll create very deep call stacks and use way too much memory. This whole thing is only a conceptual exercise.
-
-Hint 2:
-Remember that this is a higher-order function so you're going to need to think about two functions that fit together. reducePayne will accept another function and apply that in its body somehow.
-
-Hint 3:
-Recursive functions must have a terminating condition. Be explicit about what happens when you run out of items in the list.
-
-Hint 4:
-Try to think of the first param to your inner (passed-in) function as the accumulating result. This would be param a in the test data suggestion.
