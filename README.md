@@ -26,6 +26,12 @@ Implement your own version of reduce. You're not allowed to mutate any variables
 - Issues - I don't think this counts as mutating values as each time myReduce() gets called will have a new execution context and the const values are scoped within that? 
 - Ideas - Feel like this successfully generalises the first value and second value passed to the callback, as well as the return value. I think the terminating condition works well. But I've not added an additional function to the function signature so not confident that I'm meeting requirement in the hint that said that the function "will accept another function and apply that in its body somehow." Also, have I done it wrong if my function accomodates the optional initial value param.
 
+`fourthAttempt.js`
+- Clue status - given that I've done it as a method on the array prototype (in order to mimic the real reduce() in JavaScript) told could use one array menthod - slice()
+- Thought process - but being able to use slice() makes it really easy!
+- Issues - would be very happy to switch to a regular javascript function invoked via the function invokation pattern, however I don't currently see how to achieve the 'eating up' / slicing of the data with no variable assignment, mutation, or loops.
+- Ideas - is there something I don't currently remember or know about with spead and rest operators? The main es6 aspect I think of that could be relevant is the arrow function - as this doesn't have it's own this object.
+
 #### Clues:
 
 Test data suggestion:
