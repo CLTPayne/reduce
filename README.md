@@ -51,3 +51,11 @@ Listed in the issues [here](https://github.com/CLTPayne/reduce/issues/2).
 - Issues - initially was trying to use `Array.prototype.push()` to create the new array but was getting just the number `1` returned. Eventually after a bit of googling I realised this is because `push()` has the return value of the new array's length. `concat()` returns the new array, and crucially does not mutate the existing arrays. 
 - Definitely didn't find it 'easy'. 
 
+#### Challenge 3:
+Listed in the issues [here](https://github.com/CLTPayne/reduce/issues/3). 
+
+`filter1.js`
+- Clue status - no further info other than the above issue
+- Thought process - looked at the `Array.prototype.filter` to confirm that it also returns an array so heavily based this answer on the prior `myMap.js` so as to have an array as the reduced value. This kind of copy paste initially returned an array of `[true, false, true]` sort of thing so realised needed to check for truthiness and then concat with the item itself, not the return value of the passed in function, hence the conditional. 
+- Issues - initially missed the outer scope return on L14 so was just getting `0` as a result but used a `console.log` to work this out. Pending query around the naming / symantics of the params etc. 
+- Took less than 14 mins to get to this working solution. There is probably something snazier could do but this is my first working idea, building on the last solutions. 
