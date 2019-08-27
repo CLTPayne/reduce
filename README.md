@@ -32,6 +32,10 @@ Implement your own version of reduce. You're not allowed to mutate any variables
 - Issues - would be very happy to switch to a regular javascript function invoked via the function invokation pattern, however I don't currently see how to achieve the 'eating up' / slicing of the data with no variable assignment, mutation, or loops.
 - Ideas - is there something I don't currently remember or know about with spead and rest operators? The main es6 aspect I think of that could be relevant is the arrow function - as this doesn't have it's own this object.
 
+`reduce5,js`
+- Clue status - I was missing out on a key es6 addition by using the prototype pattern originally. 
+- Thought process - what es6 features do I know about other than the arrow function? Had considered spread and rest above. Now implemented with them.
+
 #### Clues:
 
 Test data suggestion:
