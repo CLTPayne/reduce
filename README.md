@@ -7,7 +7,7 @@ Implement your own version of reduce. You're not allowed to mutate any variables
 
 #### Attempts 
 
-`firstAttempt.js`
+`reduce1.js`
 - Clue status - asked for clarification around using array methods and properties. Did not reveal test data or clues. 
 - Thought process - latched onto the idea that it's about using functions and conditionals, hence the vile nested conditionals. 
 - Assumptions - assumed you can't use a while loop if a for loop is off the cards. 
