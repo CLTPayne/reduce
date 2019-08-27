@@ -2,7 +2,7 @@
 
 A Functional Programming paradigm challenge. 
 
-#### The Challenge:
+#### Challenge 1:
 Implement your own version of reduce. You're not allowed to mutate any variables and you can't use a for loop. It has to be done with functions. Don't rely on objects or instance variables. Only functions and conditionals. 
 
 #### Attempts 
@@ -37,3 +37,13 @@ Implement your own version of reduce. You're not allowed to mutate any variables
 Test data suggestion:
 reducePayne([1, 2, 3, 4, 5], function(a, b) { return a + b; })
 Your job is to implement reducePayne. You should get a result of 15 for the above call.
+
+#### Challenge 2:
+Listed in the issues [here](https://github.com/CLTPayne/reduce/issues/2). 
+
+`map1.js`
+- Clue status - no further info other than the above issue
+- Thought process - not very happy with this, it was a lot of trial and error. I had to put a lot of console.logs into `myReduce()` to follow the flow of the array elements. Potentially knowing that the challenge could be completed in one call to `myReduce` made me fixated on that and not fully trying to work out my own sollution. I also took quite a while to realise that I needed to wrap the original callback up in an outer function in order to return the new array and not a single value. 
+- Issues - initially was trying to use `Array.prototype.push()` to create the new array but was getting just the number `1` returned. Eventually after a bit of googling I realised this is because `push()` has the return value of the new array's length. `concat()` returns the new array, and crucially does not mutate the existing arrays. 
+- Definitely didn't find it 'easy'. 
+
