@@ -51,6 +51,10 @@ Listed in the issues [here](https://github.com/CLTPayne/reduce/issues/2).
 - Issues - initially was trying to use `Array.prototype.push()` to create the new array but was getting just the number `1` returned. Eventually after a bit of googling I realised this is because `push()` has the return value of the new array's length. `concat()` returns the new array, and crucially does not mutate the existing arrays. 
 - Definitely didn't find it 'easy'. 
 
+`map2.js`
+- Adjusting the params to be more in accordance with symantic convention.
+- Updating my version one as per the improvements detailed [here](https://github.com/CLTPayne/reduce/issues/2)
+
 #### Challenge 3:
 Listed in the issues [here](https://github.com/CLTPayne/reduce/issues/3). 
 
