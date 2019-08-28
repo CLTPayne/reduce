@@ -66,3 +66,12 @@ Listed in the issues [here](https://github.com/CLTPayne/reduce/issues/3).
 
 `filter2.js`
 - Adjusting the params to be more in accordance with symantic convention as suggested [here](https://github.com/CLTPayne/reduce/issues/2)
+
+#### Challenge 4:
+Listed in the issues [here](https://github.com/CLTPayne/reduce/issues/3). 
+
+`groupBy1.js`
+- Clue status - no further info other than the above issue
+- Thought process - looked up `bitwise AND` to check I understood how the example grouper function actually worked and ran it in a REPL to prove it to myself. In terms of turning an array into an opbject, I have paired on something similar but much less functial previously. 
+- Issues - initally I missed off the check to see if the property was part of the object and spreading in the previous values  so was only getting the last two values in the array e.g. `{ odd: [5], even: [6]}` 
+- Ideas - again was surprisingly quick to do - I'd attribute this to having a prior schema for data transformation from array to object. Really pleased that I could recall and apply some of that here on my own! Pretty magical to do this with reduce though.
